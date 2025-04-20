@@ -1,0 +1,198 @@
+/* === Programs Page Styling === */
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+
+#div_one {
+  background-color: #000;
+  color: #ff4d4d;
+  height: 80px;
+  padding-top: 30px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-size: 28px;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+
+#div_three {
+  display: inline-block;
+  margin-left: 430px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#home, 
+#program,
+#resource,
+#connection,
+#gui
+
+{
+  background-color: #ff4500;
+  border-radius: 6px;
+  padding: 8px 3px;
+  color: #fff;
+  margin: 5px;
+  border: none;
+  font-weight: 600;
+}
+
+
+#div_two {
+  text-align: center;
+  background-color: lightcoral;
+  border: 2px solid #ff4d4d;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px #ff4500;
+}
+
+
+#button_one,
+#add,
+#subtract,
+#restart {
+  cursor: pointer;
+  color: #fff;
+  background-color: #e60000;
+  border: none;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 50px;
+  width: 160px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  transition: 0.15s ease-in-out;
+}
+
+#button_one:hover,
+#add:hover,
+#subtract:hover,
+#restart:hover {
+  background-color: #cc0000;
+}
+
+
+#zero {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+#Start {
+  background-color: #000;
+  color: #fff;
+  border: 3px solid #fff;
+  font-size: 28px;
+  cursor: pointer;
+  width: 140px;
+  height: 60px;
+  transition: all 0.3s ease;
+  transition: 0.15s ease-in-out;
+}
+
+#Start:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#Start:active {
+  background-color: #000;
+  color: #fff;
+}
+
+
+#h1_one {
+  font-size: 48px;
+  background-color: #fff;
+  border: 2px solid #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 130px;
+}
+
+#h1_two {
+  font-size: 48px;
+  background-color: #fff;
+  border: 2px solid #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 130px;
+  color: black;
+}
+
+
+#addict_one {
+  font-size: 20px;
+}
+
+#addict_two {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+#div_four,
+#div_five,
+#div_six,
+#div_seven {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  width: 23%;
+  height: 310px;
+  border: 2px solid #000;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  margin: 10px;
+  vertical-align: top;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#div_eight {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  width: 99%;
+  height: 310px;
+  border: 2px solid #000;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  margin: 10px;
+  vertical-align: top;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#video_addict {
+  display: inline-block;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 150px;
+  font-size: 50px;
+}
+
