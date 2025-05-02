@@ -1,173 +1,184 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="program.css" />
+    <link rel="stylesheet" href="program.css" />
     <script src="index.js"></script>
-    <title>GameBalance</title>
-  </head>
-
-  <body>
+    <title>GameBalance | Programs</title>
+</head>
+<body>
     <header>
-      <div id="div_one">
-        Discover Life Beyond the Screen
-        <button id="button_one">Learn More</button>
+      <div id="topBar">
+        <div id="this_div">
+          <img src="https://cdn-icons-png.flaticon.com/512/4406/4406326.png" alt="GameBalance Logo" width="60" height="60" />
+          <h1>GameBalance</h1>
+          <div id="authButtons">
+            <a href="gui.html"><button id="program-sign-in">Sign In</button></a>
+            <a href="gui.html"><button id="program-sign-up">Sign Up</button></a>
+        </div>
       </div>
-
-        <h1 id="h1_one"> <img src="data:image/png;base64,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" height="50"> GAME <br> BALANCE </h1> 
-
-      <div id="div_three">
-        <br />
-        <a href="index.html" id="home">Home</a>
-        <a href="program.html" id="program">Programs</a>
-        <a href="resource.html" id="resource">Resources</a>
-        <a href="connection.html" id="connection">Connections</a>
-        <a href="gui.html" id="gui">GUI</a>
-        <br /><br />
+    </div>
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="program.html">Programs</a>
+        <a href="resource.html">Resources</a>
+        <a href="connection.html">Connections</a>
+        <a href="gui.html">GUI</a>
+    </nav>
+      <div id="heroSection">
+        <h2>Programs</h2>
+        <p id="program-description">
+          Get coaching, tools, and advice to help reduce screen time and create balance. Explore step-by-step guides for improving time management, reducing gaming, and finding meaningful activities.
+        </p>
+    </div>
+  </header>
+    <main>
+      <section id="programs-overview">
+        <h2>Choosing the Right Program</h2>
+        <p id="program-description">
+          Every journey is different. Find the program that fits your goals, whether it's reducing gaming, building better habits, or restoring balance.
+        </p>
+    </section>
+      <hr />
+      <section id="programs-explore">
+        <h2>Explore Programs</h2>
+        <div id="coaching-section" class="program-category">
+          <h3>Coaching Programs</h3>
+        
+          <div class="previewCard">
+            <img src="https://cdn-icons-png.flaticon.com/512/2201/2201256.png" alt="Program Icon" height="60" />
+            <h4>The Mindful Gamer</h4>
+            <p>Offers a program combining mindfulness practices with therapeutic support to help individuals regain balance and control over their gaming habits.</p>
+            <a href="https://themindfulgamer.com/" target="_blank"><button>Visit The Mindful Gamer</button></a>
+        </div>
+          <div class="previewCard">
+            <img src="https://cdn-icons-png.flaticon.com/512/2201/2201256.png" alt="Program Icon" height="60" />
+            <h4>Game Quitters</h4>
+            <p>A 12-week coaching program focused on digital detox and recovery from emotional and social challenges caused by excessive gaming.</p>
+            <a href="https://gamequitters.com/" target="_blank"><button>Visit Game Quitters</button></a>
+        </div>
+          <div class="previewCard">
+            <img src="https://cdn-icons-png.flaticon.com/512/2201/2201256.png" alt="Program Icon" height="60" />
+            <h4>reSTART Digital Detox Treatment</h4>
+            <p>The first residential mental health program in the U.S. specializing in video game and internet addiction treatment.</p>
+            <a href="https://restartlife.com/" target="_blank"><button>Visit reSTART</button></a>
+        </div>
+          <div class="previewCard">
+            <img src="https://cdn-icons-png.flaticon.com/512/2201/2201256.png" alt="Program Icon" height="60" />
+            <h4>AddictionHelp</h4>
+            <p>Connects individuals with licensed therapists trained in gaming addiction recovery.</p>
+            <a href="https://www.addictionhelp.com/" target="_blank"><button>Visit AddictionHelp</button></a>
+        </div>
       </div>
-    </header>
-
-    <section>
-      <div id="div_two">
-        <p id="addict_two">Programs</p>
-        <p id="addict_one">Coaching, Self-Assessment Tools, and Practical Strategies.</p>
+        <div id="tools-section" class="program-category">
+          <h3>Tools & Resources</h3>
+          <div class="previewCard">
+            <img src="https://cdn-icons-png.flaticon.com/512/2249/2249538.png" alt="Tool Icon" height="60" />
+            <h4>Center for Internet Addiction</h4>
+            <p>Home of the Internet Addiction Test (IAT)—a widely recognized self-assessment tool.</p>
+            <a href="https://netaddiction.com/" target="_blank"><button>Visit Center for Internet Addiction</button></a>
+        </div>
+          <div class="previewCard">
+            <img src="https://cdn-icons-png.flaticon.com/512/2249/2249538.png" alt="Tool Icon" height="60" />
+            <h4>PsychGuides</h4>
+            <p>Offers medically reviewed guides on gaming addiction diagnosis and treatment options.</p>
+            <a href="https://www.psychguides.com/behavioral-disorders/video-game-addiction/treatment/" target="_blank"><button>Visit PsychGuides</button></a>
+        </div>
+          <div class="previewCard">
+            <img src="https://cdn-icons-png.flaticon.com/512/2249/2249538.png" alt="Tool Icon" height="60" />
+            <h4>American Addiction Centers</h4>
+            <p>Provides comprehensive information on video gaming addiction symptoms and treatments.</p>
+            <a href="https://americanaddictioncenters.org/behavioral-addictions/video-gaming-addiction" target="_blank"><button>Visit AAC</button></a>
+        </div>
+          <div class="previewCard">
+            <img src="https://cdn-icons-png.flaticon.com/512/2249/2249538.png" alt="Tool Icon" height="60" />
+            <h4>Mental Health America</h4>
+            <p>Explores treatment options such as CBT, mindfulness, and support groups for gaming addiction.</p>
+            <a href="https://screening.mhanational.org/content/treating-internet-addiction/" target="_blank"><button>Visit Mental Health America</button></a>
+        </div>
+      </div>
+        <div id="practice-section" class="program-category">
+          <h3>Practice Exercises</h3>
+          <div class="previewCard">
+            <h4>Scheduled Gaming & Time Blocking</h4>
+            <p><strong>What to do:</strong> Set time limits using alarms or apps. Follow a consistent routine to control playtime.</p>
+        </div>
+          <div class="previewCard">
+            <h4>30-Day Digital Detox</h4>
+            <p><strong>What to do:</strong> Take a full month off gaming. Replace screen time with hobbies, fitness, or social events.</p>
+        </div>
+          <div class="previewCard">
+            <h4>Trigger Mapping</h4>
+            <p><strong>What to do:</strong> Write down your gaming triggers and three non-gaming alternatives for each.</p>
+        </div>
+          <div class="previewCard">
+            <h4>Purpose Rebuilding</h4>
+            <p><strong>What to do:</strong> Reflect on your goals, values, and how gaming can be redirected toward a purposeful life.</p>
+        </div>
       </div>
     </section>
-
-    <hr />
-
-    <section>
-      <div id="div_four">
-        <p>Coaching 1</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
-
-      <div id="div_five">
-        <p>Coaching 2</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
-
-      <div id="div_six">
-        <p>Coaching 3</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
-
-      <div id="div_seven">
-        <p>Coaching 4</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
+      <hr />
+      <section id="videoInfo">
+        <h2>Inspiration: TEDx Advice</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EHmC2D0_Hdg" title="Gaming Addiction Explained" allowfullscreen></iframe>
+        <p><strong>Source:</strong> <a href="https://www.youtube.com/@TEDx" target="_blank">TEDx Talk on Gaming Addiction</a></p>
+        <a href="https://www.youtube.com/@TEDx" target="_blank"><button id="related-videos-btn">More TEDx Content</button></a>
     </section>
-
-    <hr />
-
-    <section>
-      <div id="div_four">
-        <p>Tools 1</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
-
-      <div id="div_five">
-        <p>Tools 2</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
-
-      <div id="div_six">
-        <p>Tools 3</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
-
-      <div id="div_seven">
-        <p>Tools 4</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
+      <hr />
+      <section id="steps-section">
+        <h2>Steps to Success</h2>
+        <div class="factCard"><h3>Step One</h3><p>Recognize the problem.</p></div>
+        <div class="factCard"><h3>Step Two</h3><p>Set achievable goals.</p></div>
+        <div class="factCard"><h3>Step Three</h3><p>Track daily progress.</p></div>
+        <div class="factCard"><h3>Step Four</h3><p>Celebrate milestones.</p></div>
+        <div class="factCard"><h3>Step Five</h3><p>Reassess and adjust goals.</p></div>
+        <div class="factCard"><h3>Step Six</h3><p>Build a strong support system.</p></div>
+        <div class="factCard"><h3>Step Seven</h3><p>Stay consistent over time.</p></div>
+        <div class="factCard"><h3>Step Eight</h3><p>Reflect and maintain balance.</p></div>
     </section>
-
-    <hr />
-
-    <section>
-      <div id="div_four">
-        <p>Practice 1</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
-
-      <div id="div_five">
-        <p>Practice 2</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
-
-      <div id="div_six">
-        <p>Practice 3</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
-
-      <div id="div_seven">
-        <p>Practice 4</p>
-        <p></p>
-        <button id="button_one">Discover</button>
-      </div>
+      <section id="progress-form-section">
+        <h2>Track Your Progress</h2>
+        <form>
+          <fieldset>
+            <legend>Your Progress</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required /><br />
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" required /><br />
+            <label for="program-name">Which program are you using?</label>
+            <input type="text" id="program-name" required /><br />
+            <label for="progress-rating">How would you rate your progress (1-10)?</label>
+            <input type="number" id="progress-rating" min="1" max="10" required /><br />
+            <label for="feedback">Tell us about your experience so far:</label>
+            <textarea id="feedback" rows="4" required></textarea><br />
+            <button type="submit" id="submit-progress-btn">Submit</button>
+        </fieldset>
+      </form>
     </section>
-
-    <section>
-      <div id="div_two">
-        <p id="addict_two">TEDX</p>
-
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/=VzL2A5l-eVU"
-          id="video"
-        ></iframe>
-
-        <p id="addict_one">Learn More About Gaming Addiction</p>
-        <a href="#"><button id="button_one">More Like This</button></a>
-      </div>
+      <section id="this_ul">
+        <h2 id="this_header_two">Citations</h2>
+        <ul>
+          <li><a href="https://themindfulgamer.com/" target="_blank">The Mindful Gamer</a></li>
+          <li><a href="https://gamequitters.com/" target="_blank">Game Quitters</a></li>
+          <li><a href="https://restartlife.com/" target="_blank">reSTART Life</a></li>
+          <li><a href="https://www.addictionhelp.com/" target="_blank">AddictionHelp</a></li>
+          <li><a href="https://netaddiction.com/" target="_blank">Center for Internet Addiction</a></li>
+          <li><a href="https://www.psychguides.com/" target="_blank">PsychGuides</a></li>
+          <li><a href="https://americanaddictioncenters.org/" target="_blank">American Addiction Centers</a></li>
+          <li><a href="https://screening.mhanational.org/" target="_blank">Mental Health America</a></li>
+          <li><a href="https://www.youtube.com/@TEDx" target="_blank">TEDx YouTube Channel</a></li>
+          <li><a href="https://www.flaticon.com/free-icons/" target="_blank">All Icons via Flaticon</a></li>
+      </ul>
     </section>
-
-    <br /><br />
-
-    <section>
-      <div id="div_eight">
-        <p id="addict_two">What Program Is Best For You?</p>
-        <p></p>
-        <a href="#"><button id="button_one">More Information</button></a>
-      </div>
-    </section>
-
-    <br /><br />
-
-
-    <footer id="div_two">
-      <div>
-        <p id="addict_one">Discover Life Beyond the Screen</p>
-        <p id="zero">0</p> 
-      </div> 
-
-      <div id="counter-controls">
-        <button id="add">Add</button>
-        <br>
-        <button id="subtract">Subtract</button>
-        <br>
-        <button id="restart">Restart</button>
-      </div>
-
-      <div>
-        <h1 id="h1_two"> <img src="data:image/png;base64,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" height="50"> GAME <br> BALANCE </h1> 
-        <p id="addict_two"> 2025 </p>
-      </div>
-    </footer>
-
-   
-  </body>
+  </main>
+    <footer>
+      <div id="footer-content">
+        <p>&copy; 2025 GameBalance. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
