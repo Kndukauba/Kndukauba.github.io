@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gui.css" />
+    <script src="index.js"></script>
+    <title>GameBalance | GUI</title>
+</head>
+<body>
+    <header>
+      <div id="gui-top-bar">
+        <div id="this_div">
+          <img 
+            src="https://cdn-icons-png.flaticon.com/512/4406/4406326.png" 
+            alt="GameBalance Logo" 
+            width="60" 
+            height="60" 
+          />
+          <h1>GameBalance</h1>
+          <div id="gui-auth-buttons">
+            <a href="gui.html"><button id="gui-sign-in">Sign In</button></a>
+            <a href="gui.html"><button id="gui-sign-up">Sign Up</button></a>
+        </div>
+      </div>
+    </div>
+      <nav id="gui-nav">
+        <a href="index.html">Home</a>
+        <a href="program.html">Programs</a>
+        <a href="resource.html">Resources</a>
+        <a href="connection.html">Connections</a>
+        <a href="gui.html">GUI</a>
+    </nav>
+  </header>
+    <main>
+      <section id="gui-signup-form">
+        <h2>Create a New Account</h2>
+        <form>
+          <fieldset>
+            <legend>Sign-Up Information</legend>
+            <label for="signup-first-name">First Name:</label>
+            <input type="text" id="signup-first-name" required /><br />
+            <label for="signup-last-name">Last Name:</label>
+            <input type="text" id="signup-last-name" required /><br />
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" required /><br />
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" required /><br />
+            <button type="submit">Sign Up</button>
+        </fieldset>
+      </form>
+    </section>
+      <section id="gui-login-form">
+        <h2>Log In to Your Account</h2>
+        <form>
+          <fieldset>
+            <legend>Login Information</legend>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" required /><br />
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" required /><br />
+            <button type="submit">Log In</button>
+        </fieldset>
+      </form>
+    </section>
+      <section id="gui-progress-tracker">
+        <h2>Personal Tracker</h2>
+        <form>
+          <fieldset>
+            <legend>*You Must Log Into Your Account*</legend>
+            <label for="tracker-name">Full Name:</label>
+            <input type="text" id="tracker-name" required /><br />
+            <label for="tracker-date">Date:</label>
+            <input type="date" id="tracker-date" required /><br />
+            <label for="tracker-hours">Gaming Hours Today:</label>
+            <input type="number" id="tracker-hours" min="0" step="0.5" required /><br />
+            <label for="tracker-reflection">Brief Reflection:</label><br />
+            <textarea 
+              id="tracker-reflection" 
+              rows="4" 
+              placeholder="How did you feel today? What triggered you to play or avoid games?" 
+              required>
+            </textarea><br />
+            <button type="submit">Submit Progress</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+    <footer>
+      <div id="gui-footer">
+        <p>&copy; 2025 GameBalance. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
